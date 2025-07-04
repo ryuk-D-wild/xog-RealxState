@@ -112,8 +112,8 @@ export default function HomePage() {
           <form onSubmit={handleSearch} className="bg-card rounded-lg p-6 max-w-4xl mx-auto shadow-lg">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
               <Select onValueChange={(value) => setSearchParams(prev => ({ ...prev, type: value }))}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Property Type" />
+                <SelectTrigger className="text-foreground">
+                  <SelectValue placeholder="Property Type" className="text-foreground"/>
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="house">House</SelectItem>
@@ -125,8 +125,8 @@ export default function HomePage() {
               </Select>
 
               <Select onValueChange={(value) => setSearchParams(prev => ({ ...prev, transaction: value }))}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Transaction" />
+                <SelectTrigger className="text-foreground">
+                  <SelectValue placeholder="Transaction" className="text-foreground"/>
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="buy">Buy</SelectItem>

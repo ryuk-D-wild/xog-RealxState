@@ -358,10 +358,10 @@ export default function NewPropertyPage() {
 
                 {/* Agent Information */}
                 <div className="border-t pt-6">
-                  <h3 className="text-lg font-semibold mb-4">Agent Information</h3>
+                  <h3 className="text-lg font-semibold mb-4">Information</h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div>
-                      <Label htmlFor="agent-name">Agent Name</Label>
+                      <Label htmlFor="agent-name">Name</Label>
                       <Input 
                         id="agent-name" 
                         placeholder="e.g., Sarah Johnson" 
@@ -372,7 +372,7 @@ export default function NewPropertyPage() {
                     </div>
 
                     <div>
-                      <Label htmlFor="agent-phone">Agent Phone</Label>
+                      <Label htmlFor="agent-phone">Phone</Label>
                       <Input 
                         id="agent-phone" 
                         placeholder="(555) 123-4567" 
@@ -383,11 +383,11 @@ export default function NewPropertyPage() {
                     </div>
 
                     <div>
-                      <Label htmlFor="agent-email">Agent Email</Label>
+                      <Label htmlFor="agent-email">Email</Label>
                       <Input 
                         id="agent-email" 
                         type="email" 
-                        placeholder="agent@realestatepro.com" 
+                        placeholder="@realestatepro.com" 
                         required 
                         value={formData["agent-email"]}
                         onChange={handleInputChange}

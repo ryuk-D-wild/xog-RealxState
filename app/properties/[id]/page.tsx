@@ -274,7 +274,7 @@ export default function PropertyDetailPage() {
             {property.agent && (
               <Card>
                 <CardHeader>
-                  <CardTitle>Contact Agent</CardTitle>
+                  <CardTitle>Contact</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center space-x-3 mb-4">
@@ -285,7 +285,7 @@ export default function PropertyDetailPage() {
                     />
                     <div>
                       <div className="font-medium">{property.agent.name}</div>
-                      <div className="text-sm text-muted-foreground">Licensed Agent</div>
+                      <div className="text-sm text-muted-foreground">Licensed</div>
                     </div>
                   </div>
 
